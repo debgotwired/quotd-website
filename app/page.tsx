@@ -73,14 +73,14 @@ export default function HomePage() {
           >
             <a
               href={`${APP_URL}/login`}
-              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
             >
               Start for free
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#how-it-works"
-              className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-gray-900 transition-colors px-6 py-3.5"
+              className="inline-flex items-center gap-2 text-base text-gray-500 hover:text-gray-900 transition-colors px-6 py-3.5"
             >
               See how it works
             </a>
@@ -134,8 +134,8 @@ export default function HomePage() {
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 01
               </p>
-              <h3 className="text-lg font-medium mb-2">Share a link</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <h3 className="text-xl font-medium mb-2">Share a link</h3>
+              <p className="text-base text-gray-500 leading-relaxed">
                 Create an interview for your customer. They get a simple link —
                 no signup, no app, no friction.
               </p>
@@ -148,8 +148,8 @@ export default function HomePage() {
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 02
               </p>
-              <h3 className="text-lg font-medium mb-2">They talk</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <h3 className="text-xl font-medium mb-2">They talk</h3>
+              <p className="text-base text-gray-500 leading-relaxed">
                 Our AI conducts a natural voice interview — asking smart
                 follow-ups, extracting metrics, capturing their exact words.
               </p>
@@ -162,8 +162,8 @@ export default function HomePage() {
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 03
               </p>
-              <h3 className="text-lg font-medium mb-2">You publish</h3>
-              <p className="text-sm text-gray-500 leading-relaxed">
+              <h3 className="text-xl font-medium mb-2">You publish</h3>
+              <p className="text-base text-gray-500 leading-relaxed">
                 Get a complete case study draft with key metrics, direct quotes,
                 and a structured narrative. Export as PDF, Word, or HTML.
               </p>
@@ -195,8 +195,8 @@ export default function HomePage() {
                 <Mic className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Voice-first interviews</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Voice-first interviews</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   Customers speak naturally. Real-time transcription with
                   Deepgram. Text fallback always available.
                 </p>
@@ -208,8 +208,8 @@ export default function HomePage() {
                 <Zap className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Adaptive AI questions</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Adaptive AI questions</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   Every question builds on the last answer. The AI pursues the
                   most compelling threads automatically.
                 </p>
@@ -221,8 +221,8 @@ export default function HomePage() {
                 <BarChart3 className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Metric extraction</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Metric extraction</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   Hard numbers pulled automatically — revenue impact, time
                   saved, efficiency gains — with before-and-after context.
                 </p>
@@ -234,8 +234,8 @@ export default function HomePage() {
                 <Quote className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Quote capture</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Quote capture</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   The most powerful moments from the conversation, tagged and
                   ready for your marketing team.
                 </p>
@@ -247,8 +247,8 @@ export default function HomePage() {
                 <FileText className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Draft generation</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Draft generation</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   A structured, publish-ready case study in seconds. Challenge,
                   solution, impact — written from the customer&apos;s
                   perspective.
@@ -261,8 +261,8 @@ export default function HomePage() {
                 <Clock className="w-4 h-4 text-gray-400" />
               </div>
               <div>
-                <h3 className="font-medium mb-1.5">Zero customer friction</h3>
-                <p className="text-sm text-gray-500 leading-relaxed">
+                <h3 className="text-lg font-medium mb-1.5">Zero customer friction</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
                   No logins, no scheduling, no apps. One link, one conversation,
                   done in under 10 minutes.
                 </p>
@@ -285,12 +285,12 @@ export default function HomePage() {
             <br />
             <span className="italic">conversation</span> away.
           </h2>
-          <p className="text-gray-500 mb-10">
+          <p className="text-lg text-gray-500 mb-10">
             Free to start. No credit card required.
           </p>
           <a
             href={`${APP_URL}/login`}
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-sm font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
           >
             Get started
             <ArrowRight className="w-4 h-4" />
