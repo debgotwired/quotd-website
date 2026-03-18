@@ -128,9 +128,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
-                <Send className="w-4 h-4 text-gray-400" />
-              </div>
+              <Send className="w-5 h-5 text-gray-300 mb-5" />
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 01
               </p>
@@ -142,9 +140,7 @@ export default function HomePage() {
             </div>
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
-                <Mic className="w-4 h-4 text-gray-400" />
-              </div>
+              <Mic className="w-5 h-5 text-gray-300 mb-5" />
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 02
               </p>
@@ -156,9 +152,7 @@ export default function HomePage() {
             </div>
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
-                <FileText className="w-4 h-4 text-gray-400" />
-              </div>
+              <FileText className="w-5 h-5 text-gray-300 mb-5" />
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
                 03
               </p>
@@ -191,9 +185,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <Mic className="w-4 h-4 text-gray-400" />
-              </div>
+              <Mic className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Voice-first interviews</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
@@ -204,9 +196,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <Zap className="w-4 h-4 text-gray-400" />
-              </div>
+              <Zap className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Adaptive AI questions</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
@@ -217,9 +207,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <BarChart3 className="w-4 h-4 text-gray-400" />
-              </div>
+              <BarChart3 className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Metric extraction</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
@@ -230,9 +218,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <Quote className="w-4 h-4 text-gray-400" />
-              </div>
+              <Quote className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Quote capture</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
@@ -243,9 +229,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <FileText className="w-4 h-4 text-gray-400" />
-              </div>
+              <FileText className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Draft generation</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
@@ -257,9 +241,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
-                <Clock className="w-4 h-4 text-gray-400" />
-              </div>
+              <Clock className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
                 <h3 className="text-lg font-medium mb-1.5">Zero customer friction</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
