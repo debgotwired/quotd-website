@@ -128,7 +128,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center mb-6">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
                 <Send className="w-4 h-4 text-gray-400" />
               </div>
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
@@ -142,7 +142,7 @@ export default function HomePage() {
             </div>
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center mb-6">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
                 <Mic className="w-4 h-4 text-gray-400" />
               </div>
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
@@ -156,7 +156,7 @@ export default function HomePage() {
             </div>
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center mb-6">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center mb-6">
                 <FileText className="w-4 h-4 text-gray-400" />
               </div>
               <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
@@ -191,7 +191,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <Mic className="w-4 h-4 text-gray-400" />
               </div>
               <div>
@@ -204,7 +204,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <Zap className="w-4 h-4 text-gray-400" />
               </div>
               <div>
@@ -217,7 +217,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <BarChart3 className="w-4 h-4 text-gray-400" />
               </div>
               <div>
@@ -230,7 +230,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <Quote className="w-4 h-4 text-gray-400" />
               </div>
               <div>
@@ -243,7 +243,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <FileText className="w-4 h-4 text-gray-400" />
               </div>
               <div>
@@ -257,7 +257,7 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <div className="w-10 h-10 rounded-lg bg-gray-50 flex items-center justify-center shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-gray-100 border border-gray-200/60 flex items-center justify-center shrink-0">
                 <Clock className="w-4 h-4 text-gray-400" />
               </div>
               <div>
