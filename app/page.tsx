@@ -10,7 +10,7 @@ import {
   Send,
 } from "lucide-react";
 
-const APP_URL = "https://app.quotd.sh";
+const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://app.quotd.sh";
 
 export default function HomePage() {
   return (
@@ -37,7 +37,7 @@ export default function HomePage() {
             </a>
             <a
               href={`${APP_URL}/login`}
-              className="text-sm font-medium bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-800 transition-colors"
+              className="text-sm font-medium bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 transition-colors"
             >
               Get started
             </a>
@@ -49,7 +49,7 @@ export default function HomePage() {
       {/* Hero */}
       <section className="pt-40 pb-24 px-6">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-medium tracking-widest uppercase text-gray-400 mb-6 animate-fade-in">
+          <p className="text-sm font-medium tracking-widest uppercase text-gray-500 mb-6 animate-fade-in">
             Customer stories, automated
           </p>
           <h1
@@ -73,14 +73,14 @@ export default function HomePage() {
           >
             <a
               href={`${APP_URL}/login`}
-              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
+              className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 transition-colors"
             >
               Start for free
               <ArrowRight className="w-4 h-4" />
             </a>
             <a
               href="#how-it-works"
-              className="inline-flex items-center gap-2 text-base text-gray-500 hover:text-gray-900 transition-colors px-6 py-3.5"
+              className="inline-flex items-center gap-2 text-base text-gray-500 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 rounded-lg transition-colors px-6 py-3.5"
             >
               See how it works
             </a>
@@ -93,21 +93,21 @@ export default function HomePage() {
         <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 text-center">
           <div>
             <p className="text-3xl font-serif">15</p>
-            <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">
+            <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">
               Questions per interview
             </p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-gray-200" />
           <div>
             <p className="text-3xl font-serif">~8 min</p>
-            <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">
+            <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">
               Average completion
             </p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-gray-200" />
           <div>
             <p className="text-3xl font-serif">Voice-first</p>
-            <p className="text-xs text-gray-400 uppercase tracking-wider mt-1">
+            <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">
               Natural conversation
             </p>
           </div>
@@ -118,7 +118,7 @@ export default function HomePage() {
       <section id="how-it-works" className="py-28 px-6">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-20">
-            <p className="text-sm font-medium tracking-widest uppercase text-gray-400 mb-4">
+            <p className="text-sm font-medium tracking-widest uppercase text-gray-500 mb-4">
               How it works
             </p>
             <h2 className="text-3xl sm:text-4xl font-serif tracking-tight">
@@ -129,7 +129,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
               <Send className="w-5 h-5 text-gray-300 mb-5" />
-              <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
+              <p className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                 01
               </p>
               <h3 className="text-xl font-medium mb-2">Share a link</h3>
@@ -141,7 +141,7 @@ export default function HomePage() {
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
               <Mic className="w-5 h-5 text-gray-300 mb-5" />
-              <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
+              <p className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                 02
               </p>
               <h3 className="text-xl font-medium mb-2">They talk</h3>
@@ -153,7 +153,7 @@ export default function HomePage() {
 
             <div className="group p-8 rounded-2xl border border-gray-100 hover:border-gray-200 transition-colors">
               <FileText className="w-5 h-5 text-gray-300 mb-5" />
-              <p className="text-xs font-medium tracking-widest uppercase text-gray-400 mb-3">
+              <p className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                 03
               </p>
               <h3 className="text-xl font-medium mb-2">You publish</h3>
@@ -175,7 +175,7 @@ export default function HomePage() {
       <section id="features" className="py-28 px-6">
         <div className="mx-auto max-w-5xl">
           <div className="text-center mb-20">
-            <p className="text-sm font-medium tracking-widest uppercase text-gray-400 mb-4">
+            <p className="text-sm font-medium tracking-widest uppercase text-gray-500 mb-4">
               Features
             </p>
             <h2 className="text-3xl sm:text-4xl font-serif tracking-tight">
@@ -272,7 +272,7 @@ export default function HomePage() {
           </p>
           <a
             href={`${APP_URL}/login`}
-            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center gap-2 bg-gray-900 text-white px-8 py-3.5 rounded-lg text-base font-medium hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 transition-colors"
           >
             Get started
             <ArrowRight className="w-4 h-4" />
@@ -285,7 +285,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl flex flex-col sm:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-2">
             <Image src="/logo.svg" alt="Quotd" width={20} height={21} />
-            <span className="text-sm text-gray-400">Quotd</span>
+            <span className="text-sm text-gray-500">Quotd</span>
           </div>
           <p className="text-xs text-gray-300">
             &copy; {new Date().getFullYear()} Quotd. All rights reserved.

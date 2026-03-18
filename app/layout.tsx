@@ -24,6 +24,20 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.svg",
   },
+  openGraph: {
+    title: "Quotd — Turn conversations into case studies",
+    description:
+      "AI-powered voice interviews that transform customer conversations into polished, publish-ready case studies.",
+    url: "https://quotd.sh",
+    siteName: "Quotd",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Quotd — Turn conversations into case studies",
+    description:
+      "AI-powered voice interviews that transform customer conversations into polished, publish-ready case studies.",
+  },
 };
 
 export default function RootLayout({
