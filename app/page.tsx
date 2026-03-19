@@ -6,8 +6,11 @@ import {
   Zap,
   ArrowRight,
   Quote,
-  Clock,
   Send,
+  Layers,
+  CheckCircle,
+  Palette,
+  Users,
 } from "lucide-react";
 
 const APP_URL = process.env.NEXT_PUBLIC_APP_URL || "https://app.quotd.sh";
@@ -34,6 +37,12 @@ export default function HomePage() {
               className="text-sm text-gray-500 hover:text-gray-900 transition-colors hidden sm:block"
             >
               Features
+            </a>
+            <a
+              href="#compare"
+              className="text-sm text-gray-500 hover:text-gray-900 transition-colors hidden sm:block"
+            >
+              Compare
             </a>
             <a
               href={`${APP_URL}/login`}
@@ -92,9 +101,9 @@ export default function HomePage() {
       <section className="py-12 px-6 border-y border-gray-100">
         <div className="mx-auto max-w-4xl flex flex-col sm:flex-row items-center justify-center gap-8 sm:gap-16 text-center">
           <div>
-            <p className="text-3xl font-serif">15</p>
+            <p className="text-3xl font-serif">6+</p>
             <p className="text-xs text-gray-500 uppercase tracking-wider mt-1">
-              Questions per interview
+              Output formats per interview
             </p>
           </div>
           <div className="hidden sm:block w-px h-10 bg-gray-200" />
@@ -156,10 +165,11 @@ export default function HomePage() {
               <p className="text-xs font-medium tracking-widest uppercase text-gray-500 mb-3">
                 03
               </p>
-              <h3 className="text-xl font-medium mb-2">You publish</h3>
+              <h3 className="text-xl font-medium mb-2">Review &amp; repurpose</h3>
               <p className="text-base text-gray-500 leading-relaxed">
-                Get a complete case study draft with key metrics, direct quotes,
-                and a structured narrative. Export as PDF, Word, or HTML.
+                Your customer reviews the draft, you approve — then export as
+                PDF or Word, or repurpose into LinkedIn posts, one-pagers, and
+                more.
               </p>
             </div>
           </div>
@@ -198,10 +208,10 @@ export default function HomePage() {
             <div className="flex gap-5 p-6">
               <Zap className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-lg font-medium mb-1.5">Adaptive AI questions</h3>
+                <h3 className="text-lg font-medium mb-1.5">Customizable AI interviews</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
-                  Every question builds on the last answer. The AI pursues the
-                  most compelling threads automatically.
+                  Every question builds on the last answer. Set the tone, focus
+                  area, target audience, and question count to match your goals.
                 </p>
               </div>
             </div>
@@ -229,27 +239,140 @@ export default function HomePage() {
             </div>
 
             <div className="flex gap-5 p-6">
-              <FileText className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
+              <Layers className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-lg font-medium mb-1.5">Draft generation</h3>
+                <h3 className="text-lg font-medium mb-1.5">Six formats, one interview</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
-                  A structured, publish-ready case study in seconds. Challenge,
-                  solution, impact — written from the customer&apos;s
-                  perspective.
+                  Generate a one-pager, LinkedIn post, Twitter thread, sales
+                  slide, quote cards, and email blurb — all from one
+                  conversation.
                 </p>
               </div>
             </div>
 
             <div className="flex gap-5 p-6">
-              <Clock className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
+              <CheckCircle className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
               <div>
-                <h3 className="text-lg font-medium mb-1.5">Zero customer friction</h3>
+                <h3 className="text-lg font-medium mb-1.5">Customer review built in</h3>
                 <p className="text-base text-gray-500 leading-relaxed">
-                  No logins, no scheduling, no apps. One link, one conversation,
-                  done in under 10 minutes.
+                  Customers review each section, flag edits, and approve before
+                  you publish. No back-and-forth emails.
                 </p>
               </div>
             </div>
+
+            <div className="flex gap-5 p-6">
+              <Palette className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="text-lg font-medium mb-1.5">Your brand, their experience</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
+                  Add your logo, brand color, and a welcome message. Every
+                  interview page looks like it came from you.
+                </p>
+              </div>
+            </div>
+
+            <div className="flex gap-5 p-6">
+              <Users className="w-5 h-5 text-gray-300 shrink-0 mt-0.5" />
+              <div>
+                <h3 className="text-lg font-medium mb-1.5">Teams &amp; scale</h3>
+                <p className="text-base text-gray-500 leading-relaxed">
+                  Invite your team with role-based access. Create interviews in
+                  bulk via CSV. Built for teams running dozens of case studies.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Divider */}
+      <div className="mx-auto max-w-5xl px-6">
+        <div className="h-px bg-gray-100" />
+      </div>
+
+      {/* Compare */}
+      <section id="compare" className="py-28 px-6">
+        <div className="mx-auto max-w-5xl">
+          <div className="text-center mb-20">
+            <p className="text-sm font-medium tracking-widest uppercase text-gray-500 mb-4">
+              Quotd vs. the rest
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-serif tracking-tight">
+              Same goal. <span className="italic">Different game.</span>
+            </h2>
+          </div>
+
+          {/* Comparison table */}
+          <div className="overflow-x-auto -mx-6 px-6">
+            <table className="w-full text-sm border-collapse min-w-[640px]">
+              <thead>
+                <tr className="border-b border-gray-200">
+                  <th className="text-left py-4 pr-4 font-normal text-gray-400 w-[200px]" />
+                  <th className="py-4 px-4 font-semibold text-gray-900 text-center">Quotd</th>
+                  <th className="py-4 px-4 font-normal text-gray-700 text-center">
+                    <span className="block">Agencies</span>
+                    <span className="text-xs text-gray-400">Testimonial Hero, Case Study Buddy</span>
+                  </th>
+                  <th className="py-4 px-4 font-normal text-gray-700 text-center">
+                    <span className="block">Evidence platforms</span>
+                    <span className="text-xs text-gray-400">UserEvidence, Deeto, Peerbound</span>
+                  </th>
+                  <th className="py-4 px-4 font-normal text-gray-700 text-center">
+                    <span className="block">Free generators</span>
+                    <span className="text-xs text-gray-400">HubSpot, QuillBot, Writer</span>
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="text-center">
+                {[
+                  { feature: "AI voice interviews", quotd: true, agencies: false, evidence: false, free: false },
+                  { feature: "Adaptive follow-up questions", quotd: true, agencies: false, evidence: false, free: false },
+                  { feature: "Real customer involvement", quotd: true, agencies: true, evidence: true, free: false },
+                  { feature: "Metric extraction", quotd: true, agencies: false, evidence: "partial", free: false },
+                  { feature: "6+ output formats", quotd: true, agencies: "partial", evidence: false, free: false },
+                  { feature: "Customer review & approval", quotd: true, agencies: false, evidence: false, free: false },
+                  { feature: "White-label branding", quotd: true, agencies: false, evidence: false, free: false },
+                  { feature: "Team collaboration", quotd: true, agencies: false, evidence: true, free: false },
+                  { feature: "Self-serve (no agency)", quotd: true, agencies: false, evidence: true, free: true },
+                  { feature: "Zero friction for customers", quotd: true, agencies: false, evidence: false, free: false },
+                ].map((row, i) => (
+                  <tr key={i} className="border-b border-gray-100 hover:bg-gray-50/50 transition-colors">
+                    <td className="text-left py-3.5 pr-4 text-gray-700">{row.feature}</td>
+                    <td className="py-3.5 px-4">
+                      <span className="inline-block w-5 h-5 rounded-full bg-gray-900 text-white text-xs leading-5 font-medium">&#10003;</span>
+                    </td>
+                    {[row.agencies, row.evidence, row.free].map((val, j) => (
+                      <td key={j} className="py-3.5 px-4">
+                        {val === true ? (
+                          <span className="text-gray-500 font-medium">&#10003;</span>
+                        ) : val === "partial" ? (
+                          <span className="text-gray-400 text-xs tracking-wider">Partial</span>
+                        ) : (
+                          <span className="text-gray-300">&mdash;</span>
+                        )}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+                {/* Summary row */}
+                <tr>
+                  <td className="text-left py-5 pr-4 text-gray-400 italic text-xs">The bottom line</td>
+                  <td className="py-5 px-4 text-gray-900 text-xs leading-relaxed">
+                    Voice interviews, multi-format output, customer approval — self-serve.
+                  </td>
+                  <td className="py-5 px-4 text-gray-500 text-xs leading-relaxed">
+                    $5K+ per study. 4-week timelines. Scheduling headaches.
+                  </td>
+                  <td className="py-5 px-4 text-gray-500 text-xs leading-relaxed">
+                    Surveys get data points, not stories. No voice, no nuance.
+                  </td>
+                  <td className="py-5 px-4 text-gray-500 text-xs leading-relaxed">
+                    No real customer input. AI fiction, not customer proof.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
       </section>
